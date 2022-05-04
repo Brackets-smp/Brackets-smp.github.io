@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+		<meta charset="UTF-8">
+		<title>Brackets | Mods</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+
+        <nav>
+            <ul class="nav-list" id="nav-list">
+                <a class="logo" href="index.html">
+                    <li class="nav-item1"><img src="Logo.png"></img></li>
+                    <li class="nav-item">Brackets</li>
+                </a>
+                <li class="nav-item"><a href="rules.html">Rules</a></li>
+                <li class="TheChosenOne"><a href="Mods.html">Mods</a></li>
+            </ul>
+        </nav>
+    </header>
+        <p class="title">Mods</p>
+    </body>
+    <div class="paragraphe">
+        <p class="rules">Welcome to Brackets ! <br>Brackets is a modded SMP, that means that you need mods to play Brackets.<br> Under this text you will find two link to dowload the mods<br> The first link is for you if you are a MultiMc user and you want to use an instance for Brackets<br> The second link is for a normal Minecraft player who just want to download the mods.<br><br><a href="modslist.html" class="ModsList"> Mods List</a></p>
+    </div>
+        <p class="multimc">MultiMC</p>>
+            <a href="https://github.com/NoEnd-yt/NoEnd-yt.github.io/releases/download/v1.0/Brackets-SMP-MultiMC-Instance.zip" class="btn">Download | MultiMC</a>
+        <p class="Mods">Mods</p>
+            <a href="https://github.com/NoEnd-yt/NoEnd-yt.github.io/releases/download/v1.0/Brackets_SMP.zip" class="download">Download | Mods</a>
+            <a href="#">
+                <img src="Discord.png" class="img"></img>
+            </a>
+            <script>
+                window.onscroll = function() {
+                    scroll()
+                };
+              
+                function scroll() {
+                    if (document.body.scrollTop > 200 ||
+                            document.documentElement.scrollTop > 200) {
+                        document.getElementById("nav-list").style.top = "-90px";
+                    }
+                    else {
+                        document.getElementById("nav-list").style.top
+                                = "0px";
+                    }
+                }
+            </script>
+</html>
