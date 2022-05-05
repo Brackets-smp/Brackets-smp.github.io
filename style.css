@@ -36,7 +36,7 @@ body {
 }
 .nav-item:hover {
 	color: rgb(121, 121, 121);
-	transition: 0.1s;
+	transition-duration: 0.1;
 }
 
 .nav-item1 {
@@ -76,6 +76,7 @@ body {
 }
 .TheChosenOne:hover a {
 	color: rgb(121, 121, 121);
+	transition-duration: 0.1;
 }
 
 .paragraphe-smol {
@@ -179,6 +180,7 @@ body {
 
 .ModsList:hover {
 	color: rgb(65, 151, 201);
+	transition-duration: 0.1;
 }
 .img {
 	padding: 15px;
