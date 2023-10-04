@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Brackets | Mods</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<link rel="icon" type="image/x-icon" href="Logo.png">
+</head>
+
+<body>
+	<header>
+		<nav>
+			<ul class="nav-list" id="nav-list">
+				<a class="logo" href="index.html">
+					<li class="nav-item1"><img src="Logo.png"></img></li>
+					<li class="nav-item">Brackets</li>
+				</a>
+				<a href="rules.html">
+					<li class="nav-item">Rules</li>
+				</a>
+				<li class="TheChosenOne"><a href="mods.html">Mods</a></li>
+			</ul>
+		</nav>
+	</header>
+	<p class="title">Mods</p>
+</body>
+<div class="paragraphe">
+	<div class="paragraphe-smol">
+		<h3>Welcome to Brackets !</h3>
+			<p>Brackets is a modded SMP which runs on Fabric.
+			<br> The download link is at the bottom of the page. It takes you to the GitHub releases page of the modpack.
+			<br> You can find a MultiMC modpack (which includes the configs) as well as all the mods in a zip.</p>
+		<h3>Installation (for the mods.zip users):</h3>
+		<p>Copy the mods in your mod folder (.minecraft/mods), then start your game.</p>
+		<h3>Notable mods:</h3>
+		<ul>
+			<li>Terralith, Incendium, Nullscape, Structory (&amp; Structory Towers): world generation mods</li>
+			<li>YUNG's Better Structures mods</li>
+			<li>Friends&amp;Foes: adds back the mobs that were voted out in the mob votes</li>
+			<li>Farmer’s Delight: improves on the farming and food aspects of the game</li>
+			<li>AdventureZ: new bosses</li>
+			<li>AdditionZ: tweaks and new enchantments</li>
+			<li>Creeper Overhaul: creepers blend in their environment</li>
+			<li>Supplementaries: decoration blocks that are also functionnal</li>
+			<li>FallingTree: chop trees instantly with an axe, it removes durability accordingly to the number of logs in the tree</li>
+			<li>Trinkets: allows you to put multiple things in your chestplate slot, allowing for a chestplate with elytra</li>
+			<li>Dropz: item physics</li>
+			<li>Many mods from Fuzs: Universal Bone Meal, Block Runner, Diagonal Fences (it fits nicely imo), Easy Anvils, Easy Shulker Boxes, Easy Magic, Visual Workbench, and possibly more that i forgot</li>
+			<li>And many mods for performance, sound and immersion improvements(with Auditory, Presence Footsteps, ExtraSounds, AmbientSounds, Sound Physics Remastered, and Drip Sounds for the sound part)</li>
+		</ul>
+	</div>
+</div>
+<p class="Mods">Downloads</p>
+<a href="https://github.com/Brackets-smp/Brackets-smp.github.io/releases/"
+	class="download">GitHub Releases</a>
+<a href="https://discord.gg/D6gW9fc4Bf">
+	<img src="Discord.png" class="img"></img>
+</a>
+<script>
+	window.onscroll = function () {
+		scroll()
+	};
+
+	function scroll() {
+		if (document.body.scrollTop > 200 ||
+			document.documentElement.scrollTop > 200) {
+			document.getElementById("nav-list").style.top = "-90px";
+		}
+		else {
+			document.getElementById("nav-list").style.top
+				= "0px";
+		}
+	}
+</script>
+
+</html>

@@ -1,39 +1,51 @@
 * {
-	list-style: none;
-	text-decoration: none;
-	padding: 0;
-	margin: 0;
+	--links-color: #0096C7;
+	--links-hovered-color: #00B4D8;
+	--links-shadow: #00000088;
+	--fade-time: 0.1s;
 }
+
 body {
 	background-image: url(Biome.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	font-family: sans-serif;
-	height: 100vh;
 	background-attachment: fixed;
 	background-position: center center;
-	height: 100%;
+	height: auto;
+	width: auto;
+	/* overflow:auto; */
+	padding: 0;
+	margin: 0;
 }
 
 .nav-list {
+	list-style: none;
 	align-items: center;
 	display: flex;
 	justify-content: flex-start;
 	position: fixed;
 	width: 100%;
 	transition: top 0.3s;
+	padding: 0;
+	margin: 0;
+	background-color: white;
+}
+
+.nav-list > a {
+	text-decoration: none;
 }
 
 .nav-item {
 	text-transform: uppercase;
 	font-weight: 600;
-	background-color: rgb(255, 255, 255);
+	background-color: white;
 	padding: 30px;
 	padding-left: 15px;
 	color: black;
 	margin-right: auto;
-
 }
+
 .nav-item:hover {
 	color: rgb(121, 121, 121);
 	transition-duration: 0.1;
@@ -42,11 +54,12 @@ body {
 .nav-item1 {
 	text-transform: uppercase;
 	font-weight: 600;
-	background-color: rgb(255, 255, 255);
+	background-color: white;
 	padding: 21px;
 	padding-right: 0px;
 	padding-left: 25px;
 }
+
 .nav-item1 a {
 	color: #000;
 }
@@ -58,94 +71,81 @@ body {
 	font-size: 60px;
 	letter-spacing: 5px;
 	font-family: Trebuchet MS;
-	color: rgb(255, 255, 255);
+	color: white;
 	padding-top: 150px;
 }
 
 .TheChosenOne {
 	text-transform: uppercase;
 	font-weight: 600;
-	background-color: rgb(255, 255, 255);
+	background-color: white;
 	padding: 30px;
 	width: 100%;
 }
+
 .TheChosenOne a {
+	text-decoration: none;
 	color: #000;
 	letter-spacing: 1.2px;
-
 }
+
 .TheChosenOne:hover a {
 	color: rgb(121, 121, 121);
 	transition-duration: 0.1;
 }
 
-.paragraphe-smol {
+.paragraphe {
+	display: block;
 	text-align: left;
 	margin-top: 50px;
 	font-weight: 600;
 	font-size: 23px;
 	letter-spacing: 1.5px;
 	font-family: Trebuchet MS;
-	background-color: rgba(0, 0, 0, 0.362);
+	background-color: rgba(0, 0, 0, 0.5);
 	padding: 100px;
-	color: rgb(255, 255, 255);
+	color: white;
 }
 
-.paragraphe {
-	width: 100%;
+.paragraphe-smol > h3 {
+	text-decoration: underline;
 }
+
+.text-block-links {
+	color: var(--links-color);
+	text-decoration: none;
+	text-shadow: 0px 0px 5px var(--links-shadow);
+	transition: color var(--fade-time);
+	font-weight: bolder;
+}
+
+.text-block-links:hover {
+	color: var(--links-hovered-color);
+	text-decoration: none;
+	text-shadow: 0px 0px 5px var(--links-shadow);
+	font-weight: bolder;
+}
+
 
 .logo {
 	display: flex;
 	justify-content: center;
+	align-items: center;
 	width: 200px;
 }
-.btn {
-	display: flex;
-	justify-content: center;
-	text-align: center;
-	font-size: 30px;
-	font-family: sans-serif;
-	font-weight: 600;
-	background-color: rgb(178, 201, 120);
-	color: white;
-	padding: 15px;
-	margin-left: 39%;
-	margin-right: 39%;
-	margin-top: 0px;
-	margin-bottom: 50px;
-	border-radius: 10px;
-}
-.btn:hover {
-	background-color: rgb(145, 162, 98);
-}
 
-.loogo {
-	display: flex;
-	justify-content: center;
-	margin-top: 50px;
-}
-
-.multimc {
-	text-align: center;
-	text-align: center;
-	font-size: 25px;
-	font-family: sans-serif;
-	font-weight: 600;
-	color: rgb(255, 255, 255);
-	padding: 30px;
-	padding-bottom: 0;
-}
 .Mods {
 	text-align: center;
 	text-align: center;
 	font-size: 25px;
 	font-family: sans-serif;
 	font-weight: 600;
-	color: rgb(255, 255, 255);
+	text-shadow: 0px 0px 5px var(--links-shadow);
+	color: white;
 	padding: 30px;
 	padding-bottom: 10px;
 }
+
 .download {
 	display: flex;
 	justify-content: center;
@@ -153,8 +153,9 @@ body {
 	font-size: 30px;
 	font-family: sans-serif;
 	font-weight: 600;
-	background-color: rgb(120, 185, 201);
+	background-color: var(--links-color);
 	color: white;
+	transition: background-color var(--fade-time);
 	padding: 15px;
 	margin-left: 39%;
 	margin-right: 39%;
@@ -162,18 +163,19 @@ body {
 	margin-bottom: 50px;
 	border-radius: 10px;
 }
+
 .download:hover {
-	background-color: rgb(98, 137, 162);
+	background-color: var(--links-hovered-color);
 }
-.img{
+
+.img {
 	padding: 20px;
 	max-width: 8%;
 	max-height: 8%;
 	display: block;
 	padding-top: 50px;
-
-
 }
+
 .ModsList {
 	color: rgb(213, 222, 255);
 }
@@ -182,10 +184,12 @@ body {
 	color: rgb(65, 151, 201);
 	transition-duration: 0.1;
 }
+
 .img {
 	padding: 15px;
 	padding-top: 50px;
 }
+
 .littleTitle {
 	font-size: 50px;
 }
